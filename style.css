@@ -1,12 +1,30 @@
 table{
-    border: solid black;
+    border: Solid rgb(0, 0, 0);
 }
 td{
-    border: 1px solid blue;
+    border: 1px Solid rgb(164,122,84);
     padding: 10px;
+    width: 200px;
 }
 th{
-    border: 1px solid green;
     padding: 10px;
-    background-color: lightgray;
+    background-color: rgb(164,122,84);
+    width: 200px;
+}
+    @font-face {
+        /*Here I am naming my font so that I can refernce it*/
+        font-family: 'RingBearer';
+        /*Here I am linking my font file so that when I refernce it it knows what the font looks like*/
+        src: url('RingbearerMedium-51mgZ.ttf') format('truetype');
+        /*these tags let the code know that the style and weight should be normal rather than bold or italic*/
+        font-weight: normal; 
+        font-style: normal; 
+}
+body {
+    font-family: 'RingBearer', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    background-color: rgb(48, 48, 48);
 }
